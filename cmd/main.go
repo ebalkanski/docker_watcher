@@ -17,8 +17,6 @@ func main() {
 }
 
 func Test(w http.ResponseWriter, r *http.Request) {
-	log.Println("calling Test api")
-
 	resp := struct {
 		Message string `json:"message"`
 	}{

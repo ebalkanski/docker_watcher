@@ -7,7 +7,7 @@ Simple HTTP server running into a Docker container with a watcher that restarts 
 * Install `go`
 * Set `GOPATH`
 * Install `docker`
-* Clone project into $GOPATH/src/github.com/ebalkanski/docker_watcher
+* Clone project into $GOPATH/src/docker_watcher
 
 ## Run with Docker
 
@@ -18,7 +18,7 @@ docker build -t docker_watcher -f Dockerfile .
 
 Start the `docker_watcher` container.
 ```bash
-docker run -d --rm -p 8080:8080 -v $GOPATH/src/github.com/ebalkanski/docker_watcher:/go/src/docker_watcher --name docker_watcher docker_watcher
+docker run -d --rm -p 8080:8080 -v $GOPATH/src/docker_watcher:/go/src/docker_watcher --name docker_watcher docker_watcher
 ```
 
 The command will start one Docker container with a service listening
