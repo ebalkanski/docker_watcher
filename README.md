@@ -7,6 +7,7 @@ Simple HTTP server running into a Docker container with a watcher that restarts 
 * Install `go`
 * Set `GOPATH`
 * Install `docker`
+* Clone project into $GOPATH/src/github.com/ebalkanski/docker_watcher
 
 ## Run with Docker
 
